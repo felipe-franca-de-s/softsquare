@@ -21,6 +21,7 @@
 					<br>
 					<%
 					out.println("Olá Usuário seu IP é: " + request.getRemoteAddr());
+					out.println("<br> Olá Usuário seu contexto de aplicação é: " + request.getContextPath());
 					%>
 				</div>
 			</div>
