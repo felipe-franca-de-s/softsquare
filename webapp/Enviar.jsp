@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Template</title>
+    <title>Enviar</title>
   </head>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -20,7 +20,12 @@
       <main>
         <div id="content">
           <div class="innertube">
-            <h1>Conteúdo</h1>
+            <h1>Enviar</h1>
+            <form method="post" action="Receber.jsp">
+              <input type="text" name="valor" id="valor"/>
+              <br>
+              <input type="submit" name="Enviar"/>
+            </form>
           </div>
         </div>
       </main>

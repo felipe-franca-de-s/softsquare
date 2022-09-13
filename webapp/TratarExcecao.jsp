@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Template</title>
+    <title>Tratar Exceção</title>
   </head>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -20,7 +20,7 @@
       <main>
         <div id="content">
           <div class="innertube">
-            <h1>Conteúdo</h1>
+            <h1>Tratar Exceção</h1>
           </div>
         </div>
       </main>

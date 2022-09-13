@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Template</title>
+    <title>Receber</title>
   </head>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -20,7 +20,12 @@
       <main>
         <div id="content">
           <div class="innertube">
-            <h1>Conteúdo</h1>
+            <h1>Receber</h1>
+            <br>
+            <% 
+              String valor = request.getParameter("valor");
+            	out.print("O valor enviado é " + valor);
+            %>
           </div>
         </div>
       </main>
