@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>TEMPLATE</title>
+<title>Saida de Texto</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -18,6 +18,9 @@
 			<div id="content">
 				<div class="innertube">
 					<h1>CONTEÚDO</h1>
+					<%
+					out.println("Olá Mundo!");
+					%>
 				</div>
 			</div>
 		</main>

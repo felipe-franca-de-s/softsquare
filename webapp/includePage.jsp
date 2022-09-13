@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>TEMPLATE</title>
+<title>Incluir Página</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -17,11 +17,16 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>CONTEÚDO</h1>
+					<h1>Incluir Página</h1>
+
+					<%@include file="includes/pageInclude.jsp"%>
+
+
+
 				</div>
 			</div>
 		</main>
-
+		
 		<%@include file="includes/menu.jsp"%>
 	</div>
 

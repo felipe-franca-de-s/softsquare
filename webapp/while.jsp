@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>TEMPLATE</title>
+<title>Laço While</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -17,11 +17,20 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>CONTEÚDO</h1>
+					<h1>Laço While</h1>
+
+					<%
+					int i = 0;
+					while (i < 11) {
+						out.print("Repetindo Texto " + i + "<br>");
+						i++;
+					}
+					%>
+
 				</div>
 			</div>
 		</main>
-
+		
 		<%@include file="includes/menu.jsp"%>
 	</div>
 

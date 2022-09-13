@@ -11,11 +11,7 @@
 
 <body>
 
-	<header id="header">
-		<div class="innertube">
-			<h1>CURSO DE JSP</h1>
-		</div>
-	</header>
+	<%@include file="includes/header.jsp"%>
 
 	<div id="wrapper">
 		<main>
@@ -30,42 +26,11 @@
 				</div>
 			</div>
 		</main>
-
-		<nav id="nav">
-			<div class="innertube">
-				<h3>Left Menu</h3>
-				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li>
-				</ul>
-				<h3>Left Menu</h3>
-				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li>
-				</ul>
-				<h3>Left Menu</h3>
-				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li>
-				</ul>
-			</div>
-		</nav>
+		
+		<%@include file="includes/menu.jsp"%>
 	</div>
 
-	<footer id="footer">
-		<div class="innertube">
-			<p>softsquare</p>
-		</div>
-	</footer>
+	<%@include file="includes/footer.jsp"%>
 </body>
 
 </html>
