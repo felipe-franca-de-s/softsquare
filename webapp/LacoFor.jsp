@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Index JSP</title>
+<title>Laço For</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -21,7 +21,27 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Inicial</h1>
+					<h1>Laço For</h1>
+
+					<h3>1- Exemplo de Laço For com variável "i" sendo menor que
+						10, ou enquanto for menor que 10</h3>
+					<%
+					for (int i = 0; i <= 10; i++) {
+						out.println("O Valor de i é = " + i + "<br>");
+					}
+					%>
+
+					<br>
+					<h3>2- Exemplo de Laço For</h3>
+					<table border="1">
+
+						<%
+						for (int i = 0; i < 21; i++) {
+							out.println("<tr> <td> Linda = " + i + "</td> </td>");
+						}
+						%>
+					</table>
+
 				</div>
 			</div>
 		</main>
@@ -30,15 +50,15 @@
 			<div class="innertube">
 				<h3>Left Menu</h3>
 				<ul>
-					<li><a href="PegarIP.jsp">Get IP User</a></li>
-					<li><a href="Enviar.jsp">Enviar parâmetros</a></li>
-					<li><a href="TratarExcecao.jsp">Tratar Exceção</a></li>
-					<li><a href="Variaveis.jsp">Variáveis</a></li>
-					<li><a href="LacoFor.jsp">Laço For</a></li>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Link 5</a></li>
 				</ul>
 				<h3>Left Menu</h3>
 				<ul>
-					<li><a href="FormularioIfElse.jsp">Formulário If Else</a></li>
+					<li><a href="#">Link 1</a></li>
 					<li><a href="#">Link 2</a></li>
 					<li><a href="#">Link 3</a></li>
 					<li><a href="#">Link 4</a></li>

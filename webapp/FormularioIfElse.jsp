@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Index JSP</title>
+<title>Formulário If Else</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -21,7 +21,24 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Inicial</h1>
+					<h1>Formulário If Else</h1>
+					<br>
+					<h3>De acordo com o parâmetro após o input</h3>
+					<h3>a página seguinte responde de acordo com a escolha</h3>
+					<br>
+					<h4>Você quer ver o conteúdo?</h4>
+					<br>
+					<h4>Escreva a sua escolha:</h4>
+					<br>
+					<ul>
+						<li>Digite Sim</li>
+						<li>Digite Não</li>
+					</ul>
+
+					<form method="post" action="IfElse.jsp">
+						<input type="text" name="escolha" id="escolha" /> <br> <input
+							type="submit" name="Enviar" />
+					</form>
 				</div>
 			</div>
 		</main>
@@ -30,15 +47,15 @@
 			<div class="innertube">
 				<h3>Left Menu</h3>
 				<ul>
-					<li><a href="PegarIP.jsp">Get IP User</a></li>
-					<li><a href="Enviar.jsp">Enviar parâmetros</a></li>
-					<li><a href="TratarExcecao.jsp">Tratar Exceção</a></li>
-					<li><a href="Variaveis.jsp">Variáveis</a></li>
-					<li><a href="LacoFor.jsp">Laço For</a></li>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Link 5</a></li>
 				</ul>
 				<h3>Left Menu</h3>
 				<ul>
-					<li><a href="FormularioIfElse.jsp">Formulário If Else</a></li>
+					<li><a href="#">Link 1</a></li>
 					<li><a href="#">Link 2</a></li>
 					<li><a href="#">Link 3</a></li>
 					<li><a href="#">Link 4</a></li>
