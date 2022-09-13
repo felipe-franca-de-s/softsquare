@@ -28,9 +28,6 @@
 					double doubl = 1.25;
 					byte b = 0000100;
 					%>
-					<%
-					out.println("<br> Olá Usuário seu contexto de aplicação é: " + request.getContextPath());
-					%>
 					
 					<table border="1">
 					<tr>

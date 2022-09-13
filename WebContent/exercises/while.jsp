@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Incluir Página</title>
+<title>Laço While</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -17,11 +17,15 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Incluir Página</h1>
+					<h1>Laço While</h1>
 
-					<%@include file="../includes/pageInclude.jsp"%>
-
-
+					<%
+					int i = 0;
+					while (i < 11) {
+						out.print("Repetindo Texto " + i + "<br>");
+						i++;
+					}
+					%>
 
 				</div>
 			</div>

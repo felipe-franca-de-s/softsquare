@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Incluir Página</title>
+<title>Pegar IP</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -17,12 +17,12 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Incluir Página</h1>
-
-					<%@include file="../includes/pageInclude.jsp"%>
-
-
-
+					<h1>Pegar IP User</h1>
+					<br>
+					<%
+					out.println("Olá Usuário seu IP é: " + request.getRemoteAddr());
+					out.println("<br> Olá Usuário seu contexto de aplicação é: " + request.getContextPath());
+					%>
 				</div>
 			</div>
 		</main>

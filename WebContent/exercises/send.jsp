@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Incluir Página</title>
+<title>Enviar</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -17,16 +17,15 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Incluir Página</h1>
-
-					<%@include file="../includes/pageInclude.jsp"%>
-
-
-
+					<h1>Enviar</h1>
+					<form method="post" action="recept.jsp">
+						<input type="text" name="valor" id="valor" /> <br> <input
+							type="submit" name="Enviar" />
+					</form>
 				</div>
 			</div>
 		</main>
-		
+
 		<%@include file="includes/menu.jsp"%>
 	</div>
 

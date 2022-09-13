@@ -19,7 +19,7 @@
 				<div class="innertube">
 					<h1>Incluir Página</h1>
 
-					<%@include file="../includes/pageInclude.jsp"%>
+					<%@include file="includes/pageInclude.jsp"%>
 
 
 

@@ -5,7 +5,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Incluir Página</title>
+<title>Receber</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -17,12 +17,12 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Incluir Página</h1>
-
-					<%@include file="../includes/pageInclude.jsp"%>
-
-
-
+					<h1>Receber</h1>
+					<br>
+					<%
+					String valor = request.getParameter("valor");
+					out.print("O valor enviado é " + valor);
+					%>
 				</div>
 			</div>
 		</main>
