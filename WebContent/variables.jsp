@@ -19,7 +19,7 @@
 				<div class="innertube">
 					<h1>Variáveis</h1>
 					
-					<%
+					<%!
 					String texto = "texto de \n string";
 					int inteiro = 1;
 					boolean bol = true;
