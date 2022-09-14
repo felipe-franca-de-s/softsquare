@@ -5,19 +5,19 @@
 
 <head>
 <meta charset="UTF-8">
-<title>TEMPLATE</title>
+<title>Logout</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <body>
 
-	<%@include file="../includes/header.jsp"%>
+	<%@include file="includes/header.jsp"%>
 
 	<div id="wrapper">
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>CONTEÚDO</h1>
+					<h1>Logout</h1>
 
 					<%
 
@@ -27,10 +27,10 @@
 			</div>
 		</main>
 
-		<%@include file="../includes/menu.jsp"%>
+		<%@include file="includes/menu.jsp"%>
 	</div>
 
-	<%@include file="../includes/footer.jsp"%>
+	<%@include file="includes/footer.jsp"%>
 </body>
 
 </html>

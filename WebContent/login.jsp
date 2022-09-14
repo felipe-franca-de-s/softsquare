@@ -5,11 +5,9 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Index JSP</title>
+<title>Login</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
-<script type="text/javascript" src="js/script.jp"></script>
 
 <body>
 
@@ -19,9 +17,21 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>CONTEÚDO</h1>
-					<div id="div1"
-						style="width: 800px; height: 600px; border: 1px solid #d1d1d1;"></div>
+					<h1>Logout</h1>
+
+					<br>
+					<div align="center">
+	
+						<form action="validateSession.jsp" method="post">
+							<table>
+								<tr> <td> Usuário </td> <td> : <input type="text" name="nome" id="nome"> </td></tr>
+								<tr> <td> Senha </td> <td> : <input type="password" name="password" id="password"> 
+								<tr> <td> </td> <td> <input type="submit" name="Entrar" value="Entrar">
+							</table>
+						</form>
+						
+					</div>
+
 				</div>
 			</div>
 		</main>
