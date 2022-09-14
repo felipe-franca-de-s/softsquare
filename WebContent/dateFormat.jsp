@@ -1,3 +1,5 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -5,11 +7,9 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Index JSP</title>
+<title>Date Format</title>
 </head>
-
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript" src="js/script.js"></script>
 
 <body>
 
@@ -19,9 +19,13 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>CONTEÚDO</h1>
-					<div id="div1"
-						style="width: 800px; height: 600px; border: 1px solid #d1d1d1;"></div>
+					<h1>Date Format</h1>
+					<br>
+					<%
+					Date dNow = new Date();
+					SimpleDateFormat df = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+					out.print("Data formatada: " + df.format(dNow) + "");
+					%>
 				</div>
 			</div>
 		</main>

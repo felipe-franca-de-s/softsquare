@@ -21,8 +21,20 @@
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="switch.jsp">10 - Exercício Switch</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="responseRedirect.jsp">11 - Redirecionamento de Resposta</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="declaration.jsp">12 - Declaração</a></li>
-			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link 4</a></li>
-			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link 5</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="dateTime.jsp">13 - Data e Hora</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="error.jsp">14 - Mostra o erro em outra página</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="errorSecond.jsp">15 - Mostra o Erro na mesma pagina</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="login.jsp">16 - Trabalhando com sessão</a></li>
+		</ul>
+		<h3>Left Menu</h3>
+		<ul>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="dateFormat.jsp">17 - Formatação de datas</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="function.jsp">18 - Funções</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
 		</ul>
 	</div>
 </nav>

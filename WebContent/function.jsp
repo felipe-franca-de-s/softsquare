@@ -5,11 +5,9 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Index JSP</title>
+<title>TEMPLATE</title>
 </head>
-
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript" src="js/script.js"></script>
 
 <body>
 
@@ -20,8 +18,11 @@
 			<div id="content">
 				<div class="innertube">
 					<h1>CONTEÚDO</h1>
-					<div id="div1"
-						style="width: 800px; height: 600px; border: 1px solid #d1d1d1;"></div>
+
+					<%
+
+					%>
+
 				</div>
 			</div>
 		</main>
