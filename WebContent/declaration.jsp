@@ -20,7 +20,7 @@
 					<h1>Declaration</h1>
 					<br>
 
-					<%! String variavel = "Variavel que foi declarada.";%>
+					<%! String variavel = "Sou uma Variavel que foi declarada.";%>
 					<br>
 					<%= variavel %>
 					<% %>

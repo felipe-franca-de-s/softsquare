@@ -1,5 +1,5 @@
 <footer id="footer">
 	<div class="innertube">
-		<p>softsquare</p>
+		<p>SMS (Secretaria Municipal de Saúde)</p>
 	</div>
 </footer>
