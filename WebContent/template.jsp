@@ -19,10 +19,6 @@
 				<div class="innertube">
 					<h1>CONTEÚDO</h1>
 
-					<%
-
-					%>
-
 				</div>
 			</div>
 		</main>

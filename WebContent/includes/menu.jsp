@@ -30,8 +30,8 @@
 		<ul>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="dateFormat.jsp">17 - Formatação de datas</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="function.jsp">18 - Funções</a></li>
-			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
-			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="diretive.jsp">19 - Diretivas</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="objImplicit.jsp">20 - Objetos Implícitos</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
