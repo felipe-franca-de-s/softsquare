@@ -17,7 +17,7 @@
 		<main>
 			<div id="content">
 				<div class="innertube">
-					<h1>Logout</h1>
+					<h1>Login</h1>
 
 					<br>
 					<div align="center">

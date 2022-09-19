@@ -23,6 +23,7 @@
 					String name = (String) session.getAttribute("user");
 					out.print("Seja a sua página de perfil " + name);
 					%>
+					<a href="logout.jsp">Sair</a>
 
 				</div>
 			</div>

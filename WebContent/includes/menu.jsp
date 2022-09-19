@@ -24,7 +24,7 @@
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="dateTime.jsp">13 - Data e Hora</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="error.jsp">14 - Mostra o erro em outra página</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="errorSecond.jsp">15 - Mostra o Erro na mesma pagina</a></li>
-			<li><a onmouseover="previewUrl (this.href, 'div1')" href="login.jsp">16 - Trabalhando com sessão</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="login.jsp">16 - Trabalhando com sessão (Login)</a></li>
 		</ul>
 		<h3>Left Menu</h3>
 		<ul>
