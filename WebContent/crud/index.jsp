@@ -1,7 +1,26 @@
+<%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
+<%
+try {
+	String DRIVER = "com.mysql.jdbc.Driver";
+	Class.forName(DRIVER).newInstance();
+	Connection connectionMysql = null;
+	Statement statement = null;
+	ResultSet resultSet = null;
+	
+	String url = "jdbc:mysql://localhost:3306/softsquare";
+	String user = "felipe";
+	String password = "felipe";
+	connectionMysql = DriverManager.getConnection(url, user, password);
+	statement = connectionMysql.createStatement();
+
+	String sql = "SELECT * FROM Student ";
+	resultSet = statement.executeQuery(sql);
+%>
 
 <head>
 <meta charset="UTF-8">
@@ -9,7 +28,7 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<body>
+<body>resultSet
 
 	<%@include file="../includes/header.jsp"%>
 
@@ -18,6 +37,36 @@
 			<div id="content">
 				<div class="innertube">
 					<h1>Index Crud</h1>
+
+					<table border="1">
+						<tr>
+							<td>Nome</td>
+							<td>Cidade</td>
+							<td>Telefone</td>
+							<td>Ações</td>
+						</tr>
+						<%
+						while (resultSet.next()) {
+						%>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<%
+						out.print("<tr> <td>" + resultSet.getString("name") + "</td> <td>" + resultSet.getString("city") + "</td> <td>"
+								+ resultSet.getString("phone") + "<td> <a href='edit.jsp?id=" + resultSet.getString("id")
+								+ "'>editar</td> </tr>");
+						%>
+
+						<%
+						}
+						} catch (SQLException sqlException) {
+
+						}
+						%>
+
+					</table>resultSet
 
 				</div>
 			</div>

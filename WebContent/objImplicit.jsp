@@ -20,17 +20,17 @@
 					<h1>Obj Implícito</h1>
 
 					<%
-					System.out.print("\n" + request.getLocalName());
-					System.out.print("\n" + request.getProtocol());
-					System.out.print("\n" + request.getAuthType());
-					System.out.print("\n" + request.getPathInfo());
-					System.out.print("\n" + request.getContextPath());
-					System.out.print("\n" + request.getLocale());
-					System.out.print("\n" + request.getLocalPort());
-					System.out.print("\n" + pageContext.getPage());
-					System.out.print("\n" + request.getRemoteUser());
-					System.out.print("\n" + request.getServletPath());
-					System.out.print("\n" + request.getRequestURI());
+					out.print("<br>" + request.getLocalName());
+					out.print("<br>" + request.getProtocol());
+					out.print("<br>" + request.getAuthType());
+					out.print("<br>" + request.getPathInfo());
+					out.print("<br>" + request.getContextPath());
+					out.print("<br>" + request.getLocale());
+					out.print("<br>" + request.getLocalPort());
+					out.print("<br>" + pageContext.getPage());
+					out.print("<br>" + request.getRemoteUser());
+					out.print("<br>" + request.getServletPath());
+					out.print("<br>" + request.getRequestURI());
 					%>
 
 				</div>
