@@ -11,13 +11,12 @@ try {
 	Connection connectionMysql = null;
 	Statement statement = null;
 	ResultSet resultSet = null;
-	
+
 	String url = "jdbc:mysql://localhost:3306/softsquare";
 	String user = "felipe";
 	String password = "felipe";
 	connectionMysql = DriverManager.getConnection(url, user, password);
 	statement = connectionMysql.createStatement();
-
 	String sql = "SELECT * FROM Student ";
 	resultSet = statement.executeQuery(sql);
 %>
@@ -28,7 +27,7 @@ try {
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<body>resultSet
+<body>
 
 	<%@include file="../includes/header.jsp"%>
 
@@ -37,6 +36,12 @@ try {
 			<div id="content">
 				<div class="innertube">
 					<h1>Index Crud</h1>
+
+					<br>
+					<form action="new.jsp">
+						<input type="submit" value="Novo Registro">
+					</form>
+					<br>
 
 					<table border="1">
 						<tr>
@@ -47,26 +52,15 @@ try {
 						</tr>
 						<%
 						while (resultSet.next()) {
-						%>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<%
-						out.print("<tr> <td>" + resultSet.getString("name") + "</td> <td>" + resultSet.getString("city") + "</td> <td>"
-								+ resultSet.getString("phone") + "<td> <a href='edit.jsp?id=" + resultSet.getString("id")
-								+ "'>editar</td> </tr>");
-						%>
-
-						<%
+							out.print("<tr> <td>" + resultSet.getString("name") + "</td> <td>" + resultSet.getString("city") + "</td> <td>"
+							+ resultSet.getString("phone") + "<td> <a href='edit.jsp?id=" + resultSet.getString("id")
+							+ "'>editar</td> </tr>");
 						}
 						} catch (SQLException sqlException) {
-
 						}
 						%>
 
-					</table>resultSet
+					</table>
 
 				</div>
 			</div>

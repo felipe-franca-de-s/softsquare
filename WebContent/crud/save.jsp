@@ -1,32 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@page import="java.sql.*"%>
+<%
+try {
+	String id = request.getParameter("id");
+	String name = request.getParameter("name");
+	String city = request.getParameter("city");
+	String phone = request.getParameter("phone");
+	String sql = "INSERT INTO Student (id, name, city, phone) VALUES(" + id + ", '" + name + "','" + city + "','"
+	+ phone + "');";
 
-<head>
-<meta charset="UTF-8">
-<title>Save</title>
-</head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	String driverSql = "com.mysql.jdbc.Driver";
+	Class.forName(driverSql);
+	Connection connectionMysql = null;
+	Statement statement = null;
 
-<body>
+	String url = "jdbc:mysql://localhost:3306/softsquare";
+	String user = "felipe";
+	String password = "felipe";
+	connectionMysql = DriverManager.getConnection(url, user, password);
+	statement = connectionMysql.createStatement();
+	statement.executeUpdate(sql);
 
-	<%@include file="../includes/header.jsp"%>
-
-	<div id="wrapper">
-		<main>
-			<div id="content">
-				<div class="innertube">
-					<h1>Save</h1>
-
-				</div>
-			</div>
-		</main>
-
-		<%@include file="../includes/menu.jsp"%>
-	</div>
-
-	<%@include file="../includes/footer.jsp"%>
-</body>
-
-</html>
+	response.sendRedirect("index.jsp");
+} catch (SQLException sqlException) {
+	out.print("Erro:" + sqlException);
+}
+%>
