@@ -33,7 +33,7 @@
 						<table>
 							<tr>
 								<td>Nome:</td>
-								<td><input type="text" name="nome" id="nome" <%nome = person.setNome(nome); %>></td>
+								<td><input type="text" name="nome" id="nome"></td>
 							</tr>
 							<tr>
 								<td>Segundo Nome:</td>
