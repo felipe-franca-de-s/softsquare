@@ -33,7 +33,7 @@
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="diretive.jsp">19 - Diretivas</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="objImplicit.jsp">20 - Objetos Implícitos</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="crud/index.jsp">21 - CRUD em JSP</a></li>
-			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
+			<li><a onmouseover="previewUrl (this.href, 'div1')" href="inputFile.jsp">22 - Upload de Arquivos</a></li>
 			<li><a onmouseover="previewUrl (this.href, 'div1')" href="#">Link</a></li>
 		</ul>
 	</div>

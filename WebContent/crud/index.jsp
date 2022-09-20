@@ -62,6 +62,12 @@ try {
 
 					</table>
 
+					<h5>
+						(O menu não funciona aqui) <br> 
+						Voltar para ao index principal? <a href="../index.jsp" class="botao-voltar">Voltar</a>
+					</h5>
+
+
 				</div>
 			</div>
 		</main>
